@@ -199,54 +199,44 @@ section{
 
 .hobby-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
 }
 
 .hobby-card{
     background:#fff;
-    padding:40px;
-    text-align:center;
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
 }
 
 .hobby-card:hover{
     transform:translateY(-10px);
 }
 
-.hobby-card i{
-    font-size:55px;
-    color:#2563eb;
-    margin-bottom:15px;
+.hobby-card img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
 }
 
-/* Contact */
-
-.contact-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.contact-card{
-    background:white;
-    padding:35px;
-    border-radius:20px;
+.overlay{
+    padding:20px;
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
 }
 
-.contact-card:hover{
-    transform:translateY(-10px);
-}
-
-.contact-card i{
-    font-size:45px;
+.overlay h3{
     color:#2563eb;
-    margin-bottom:15px;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.overlay p{
+    color:#555;
+    font-size:15px;
+    line-height:1.6;
 }
 
 /* Footer */
